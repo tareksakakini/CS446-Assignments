@@ -1,0 +1,26 @@
+Resources for CS 446 SP2015 Homework 1, Part 2: Badges Game Classifiers:
+
+  README: this file, which summarizes the provided resources
+
+  data/: directory containing examples for a modified badges game
+    '    by default, after running the test script the data/ directory will also contain the generated .arff files used by Weka
+    '
+    '-> badges.modified.data.all: file containing labeled trianing examples for modified badges game
+    '-> badges.modified.data.fold#: file containing one of five predefined folds, used for cross-validation (# is in range [1,5])
+    '-> unlabeled.txt: file containing unlabeled examples; use you final classifiers to predict these labels
+
+  code/: directory containing source code and executables for running your experiments
+    '
+    '-> src/: directory containing source code; modify/augment this code to fulfill the assignment requirements
+    '     '-> Id3.java: a modified version of Weka's Id3 code, which can be trained up to a limited depth
+    '     '-> FeatureGenerator.java: a sample routine that generates features in the .arff format
+    '     '-> WekaTester.java: a sample routine that shows how the decision tree learner can be used
+    '
+    '-> lib/: 
+    '     '-> weka.jar: Java resource for Weka machine learning toolkit
+    '
+    '-> bin/: default directory for Java .class files
+    '
+    '-> test.sh: sample test script to compile and run code (to run it, you may need to make it executable: > chmod +x test.sh)
+    '-> Makefile: used by test.sh to compile source code
+
